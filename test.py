@@ -83,6 +83,26 @@
 #             break
 
 #-------------------------------
-#Вийнятки
+# while
+# counter = 1
+# while counter <= 5:
+#     a = int(input("value "))
+#     print(a)
+#     counter += 1
+#     if counter == 6:
+#         print("Finish")
+    
+#--------------------------------
+# try_except
 
-int("a")
+age = (input("How old are you? "))
+try:
+    if age >= 18:
+        print("Access allowed")
+    else:
+        print("access denied")
+except:
+    print(f"{age} isn't a number... please write number ")
+
+#--------------------------------
+
