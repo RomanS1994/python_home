@@ -94,15 +94,46 @@
     
 #--------------------------------
 # try_except
+# while True:
+#     age = int(input("How old are you? "))
+#     try:
+#         if age >= 18:
+#             print("Access allowed")
+#             break
+#         else:
+#             print("access denied")
+#             break
+#     except:
+#         print(f"{age} isn't a number... please write number ")
+#     finally:
+#         print('_'*100)
+#--------------------------------
 
-age = (input("How old are you? "))
-try:
-    if age >= 18:
-        print("Access allowed")
-    else:
-        print("access denied")
-except:
-    print(f"{age} isn't a number... please write number ")
+# num = int(input("Enter integer (0 for output): "))
+# sum = 0
+
+# while num != 0:
+#     for i in range(num):
+#         sum += i  # Виправлено синтаксичну помилку
+
+
 
 #--------------------------------
 
+# message = input("Enter a message: ")
+# offset = int(input("Enter the offset: "))
+# encoded_message = ""
+# for ch in message:
+#     pos = ord(f"{ch}") + offset
+#     print(pos)
+#     encoded_message += chr(pos)   
+#     print(encoded_message)
+        
+        
+    
+        
+        
+        
+        
+    
+        
