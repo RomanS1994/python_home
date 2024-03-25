@@ -130,10 +130,82 @@
 #     print(encoded_message)
         
         
+#--------------------------------
+
+# result = None
+# operand = None
+# operator = None
+# wait_for_number = True
+
+# while True:
     
-        
-        
-        
-        
-    
-        
+
+
+#Перша: ["10", "+", "5", "6", "/", "3", "-", "a", "2", "*", "6", "= "], результат 18.0
+#Друга: ["2", "3", "-", "1", "+", "10", "*", "2", "="], результат 22.0
+#--------------------------------
+"""
+def total(a=5, *numbers, **phone_book):
+    print('a', a)
+    # прохід по всіх елементах кортежу
+    for single_item in numbers:
+        print('single_item', single_item)
+
+    #прохід по всіх елементах словника
+    for first_part, second_part in phone_book.items():
+        print(first_part,second_part)
+
+print(total(10, 1, 2, 3, Jack=1123, John=2231, Inge=1560))
+"""
+#--------- Кортеджі -----------------------
+# a = (1,2,3)
+# print(a)
+# print(a[1])
+
+# b = ("Roman", "Dima")
+# print(b)
+# print(b[1])
+
+#-------------- Калькулятор ------------------
+
+result = 0
+operand = None
+operator = None
+wait_for_number = True
+
+while True:
+    response = input(">>> ")
+    try:
+        if wait_for_number:
+            parts = response.split(".")
+            erg_msg = f"{response} not a number: Try again"
+
+            if len(parts) > 2:
+                raise ValueError(erg_msg)
+            for part in parts:
+                if not part.isnumeric():
+                    raise ValueError(erg_msg)
+
+            if len(parts) == 1:
+                operand = int(response)
+            else:
+                operand = float(response)
+
+            if operator is None or operator == "+":
+                result += operand
+            elif operator == "-":
+                result -= operand
+            elif operator == "*":
+                result *= operand
+            elif operator == "/":
+                result /= operand
+        else: 
+            if response == "=":
+                print(f"result: {result}")
+                break
+
+            if response not in ["+", "-", "*", "/"]:
+                raise ValueError(f"{response} is not +, -, *, /, Try again")
+        wait_for_number = not wait_for_number
+    except ValueError as e:
+        print(e)
