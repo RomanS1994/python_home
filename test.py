@@ -183,7 +183,7 @@ while True:
             if len(parts) > 2:
                 raise ValueError(erg_msg)
             for part in parts:
-                if not part.isnumeric():
+                if not part.replace("-", "").isnumeric():
                     raise ValueError(erg_msg)
 
             if len(parts) == 1:
@@ -198,14 +198,23 @@ while True:
             elif operator == "*":
                 result *= operand
             elif operator == "/":
+                if operand == 0:
+                    raise ValueError("Division by zero is not allowed.")
                 result /= operand
         else: 
             if response == "=":
-                print(f"result: {result}")
+                print(f"Result: {result}")
                 break
 
             if response not in ["+", "-", "*", "/"]:
                 raise ValueError(f"{response} is not +, -, *, /, Try again")
+            operator = response
         wait_for_number = not wait_for_number
     except ValueError as e:
         print(e)
+
+
+# Тестові послідовності:
+
+# Перша: ["10", "+", "5", "6", "/", "3", "-", "a", "2", "*", "6", "= "], результат 18.0
+# Друга: ["2", "3", "-", "1", "+", "10", "*", "2", "="], результат 22.0
