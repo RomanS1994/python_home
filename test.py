@@ -168,50 +168,50 @@ print(total(10, 1, 2, 3, Jack=1123, John=2231, Inge=1560))
 
 #-------------- Калькулятор ------------------
 
-result = 0
-operand = None
-operator = None
-wait_for_number = True
+# result = 0
+# operand = None
+# operator = None
+# wait_for_number = True
 
-while True:
-    response = input(">>> ")
-    try:
-        if wait_for_number:
-            parts = response.split(".")
-            erg_msg = f"{response} not a number: Try again"
+# while True:
+#     response = input(">>> ")
+#     try:
+#         if wait_for_number:
+#             parts = response.split(".")
+#             erg_msg = f"{response} not a number: Try again"
 
-            if len(parts) > 2:
-                raise ValueError(erg_msg)
-            for part in parts:
-                if not part.replace("-", "").isnumeric():
-                    raise ValueError(erg_msg)
+#             if len(parts) > 2:
+#                 raise ValueError(erg_msg)
+#             for part in parts:
+#                 if not part.replace("-", "").isnumeric():
+#                     raise ValueError(erg_msg)
 
-            if len(parts) == 1:
-                operand = int(response)
-            else:
-                operand = float(response)
+#             if len(parts) == 1:
+#                 operand = int(response)
+#             else:
+#                 operand = float(response)
 
-            if operator is None or operator == "+":
-                result += operand
-            elif operator == "-":
-                result -= operand
-            elif operator == "*":
-                result *= operand
-            elif operator == "/":
-                if operand == 0:
-                    raise ValueError("Division by zero is not allowed.")
-                result /= operand
-        else: 
-            if response == "=":
-                print(f"Result: {result}")
-                break
+#             if operator is None or operator == "+":
+#                 result += operand
+#             elif operator == "-":
+#                 result -= operand
+#             elif operator == "*":
+#                 result *= operand
+#             elif operator == "/":
+#                 if operand == 0:
+#                     raise ValueError("Division by zero is not allowed.")
+#                 result /= operand
+#         else: 
+#             if response == "=":
+#                 print(f"Result: {result}")
+#                 break
 
-            if response not in ["+", "-", "*", "/"]:
-                raise ValueError(f"{response} is not +, -, *, /, Try again")
-            operator = response
-        wait_for_number = not wait_for_number
-    except ValueError as e:
-        print(e)
+#             if response not in ["+", "-", "*", "/"]:
+#                 raise ValueError(f"{response} is not +, -, *, /, Try again")
+#             operator = response
+#         wait_for_number = not wait_for_number
+#     except ValueError as e:
+#         print(e)
 
 
 # Тестові послідовності:
