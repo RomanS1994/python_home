@@ -1,6 +1,8 @@
-import math
+# import math
 
-print(math.pow(2, 3))
+# from lesson_3 import print_hello
+
+# print(math.pow(2, 3))
 
 # a + b = c
 # Отримати a
@@ -35,3 +37,4 @@ print(math.pow(2, 3))
 # print(type(age))
 
 #---------------------------------------------
+print("Hello World")
