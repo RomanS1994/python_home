@@ -27,3 +27,30 @@
 # print(sum)
 
 ### -------------------------
+# n = 5001
+#
+# hours = n // (60 * 60)
+# minutes = (n - hours * 60 * 60) // 60
+# seconds = n - hours * 60 * 60 - minutes * 60
+# print(hours, minutes, seconds)
+
+# print(-3 ** 2)
+# print("Привіт", end=" ")
+
+### ============== Списки
+my_list = ['Roman', 24, "Misha", 24, 3.14, ]
+# my_list.append(222)
+# my_list.remove(24)
+# print(my_list.pop(2))
+ґґґ
+# test = my_list.pop(2)
+# print(test)
+# print(my_list)
+
+##-------
+# my_list = [1, 2, 3, 4, 2, 2, 5, 2]
+# print(my_list.count(6))
+
+
+
+### ============== Словники
