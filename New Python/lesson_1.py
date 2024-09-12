@@ -38,11 +38,11 @@
 # print("Привіт", end=" ")
 
 ### ============== Списки
-my_list = ['Roman', 24, "Misha", 24, 3.14, ]
+# my_list = ["Roman", 24, "Misha", 24, 3.14]
 # my_list.append(222)
 # my_list.remove(24)
 # print(my_list.pop(2))
-ґґґ
+
 # test = my_list.pop(2)
 # print(test)
 # print(my_list)
@@ -54,3 +54,20 @@ my_list = ['Roman', 24, "Misha", 24, 3.14, ]
 
 
 ### ============== Словники
+
+# my_dict = {"name": "Alice", "age": 25, "city": "New York"}
+# # print(my_dict["name"])  # Виведе 'Alice'
+#
+# # my_dict["age"] = 24
+# # print(my_dict["age"])
+#
+# my_dict['fullname'] = 'Romans'
+# # print(my_dict)
+# del my_dict['fullname']
+
+#-------
+#
+# my_dict = {"name": "Alice", "age": 25, "city": "New York"}
+#
+# print('age' in my_dict)
+
