@@ -51,6 +51,15 @@
 # my_list = [1, 2, 3, 4, 2, 2, 5, 2]
 # print(my_list.count(6))
 
+# my_list = [1, 2, 3]
+# test = [8, 7, 9]
+# my_list.extend([4, 5, 6])
+# #[1, 2, 3, 4]
+# my_list.extend(test)
+# sorted(my_list)
+# print(my_list)
+# test = sorted(my_list)
+# print(test)
 
 
 ### ============== Словники
@@ -71,3 +80,14 @@
 #
 # print('age' in my_dict)
 
+# my_list = [1, 'b', 3]
+#
+# test = my_list.pop(2)
+# print(test)
+
+
+### ========= Множини
+lst = [1, 2, 3, 1, 2, 2, 3, 4, 1]
+
+test = set(lst)
+print(test)
