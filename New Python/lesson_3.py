@@ -1,3 +1,5 @@
+#### --------- Тема 3. Модулі datetime та time. Робота з випадковими величинами
+
 import datetime
 # now = datetime.datetime.now()
 # print(now)
@@ -9,6 +11,7 @@ import datetime
 
 #
 from datetime import datetime, timedelta
+from re import match
 
 # from black import datetime, timezone
 
@@ -62,3 +65,7 @@ from datetime import datetime, timedelta
 # number =  random() * 1000
 # print(f"{number:.0f}")
 
+##### -------- Модуль MATH
+# import math
+# test = math.tau
+# print(test)
