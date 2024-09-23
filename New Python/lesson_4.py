@@ -50,3 +50,20 @@
 # for num in range(6):
 #     print(f'{num:^10} {num**2:^10} {num**3:^10}')
 
+# completion = 1.7564
+# formatted = f"{completion:.1%}"
+# print(formatted)  # Виведе: '75.6%'
+
+
+#### ---- Регулярні вирази в Пайтоні
+import re
+
+# re.match() перевіряє початок рядка на співпадіння з шблоном
+
+target = re.match(r'match',  'match test string')
+print(target.group())
+# target = re.match(r'match',  'not match test string')
+# print(target.group())
+
+def romans( asdd , dsd )
+    print(romans(1, 2))
