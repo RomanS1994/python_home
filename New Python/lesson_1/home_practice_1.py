@@ -47,6 +47,10 @@
 # print(test)
 # print(my_list)
 
+
+
+my-lyst = 
+
 ##-------
 # my_list = [1, 2, 3, 4, 2, 2, 5, 2]
 # print(my_list.count(6))
@@ -87,7 +91,7 @@
 
 
 ### ========= Множини
-lst = [1, 2, 3, 1, 2, 2, 3, 4, 1]
+# lst = [1, 2, 3, 1, 2, 2, 3, 4, 1]
 
-test = set(lst)
-print(test)
+# test = set(lst)
+# print(test)
