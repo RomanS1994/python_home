@@ -26,15 +26,21 @@
 
 # Попрактикувати зрізи
 
+text = "hello world"
+
+print(text[:2])
+
 # Зробити задачу на if
 
-username = input('enter your username please')
-password = input('enter your password please')
+# username = input('enter your username please >>> ')
+# password = input('enter your password please >>> ')
 
-if username == 'admin' and password.isalnum:
-
-
-
+# if username == 'admin' and username.isalnum() and password == 'qweasd':
+#     print("Welkome Admin")
+# elif username == "romans" and username.isalnum() and password == 'zohan1994':
+#     print("Welkome Roman")
+# else:
+#     print("Your user name or password is not true")
 
 
 
