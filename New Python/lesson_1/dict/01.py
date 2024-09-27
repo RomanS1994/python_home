@@ -21,16 +21,16 @@ def word_count(s):
     count = 1
     lst = {}
 
-    for world in s.split():
-        if world not in lst:
-            lst[world] = count
+    for word in s.split():
+        if word not in lst:
+            lst[word] = count
         else:
-            lst[world] = count + 1
+            lst[word] = count + 1
             
    
     return lst
 
-print(word_count(test_string))
+# print(word_count(test_string))
 
 # ==============================================================
 # task2 Перевертання словника
@@ -39,3 +39,15 @@ print(word_count(test_string))
 students_grades = {'Олена': 90, 'Іван': 85, 'Марія': 92, 'Андрій': 90}
 # Вихід:
 {90: ['Олена', 'Андрій'], 85: ['Іван'], 92: ['Марія']}
+
+def revers_gict(obj: dict ) -> dict:
+    new_obj = {}
+    for student, grade in obj.items():
+        if grade not in new_obj:
+            new_obj[grade] = []
+        new_obj[grade].append(student)
+
+
+    return new_obj
+
+print(revers_gict(students_grades))
