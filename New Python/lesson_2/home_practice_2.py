@@ -1,7 +1,7 @@
 #### ============== Конструкція If
 # a = 3
 # if a > 2:
-    # print("True")
+# print("True")
 # else:
 #     print("False")
 
@@ -170,8 +170,5 @@
 def first(size, *arg):
     print(len(*arg))
 
+
 print(first(5, "first", "second", "third"))
-
-
-
-

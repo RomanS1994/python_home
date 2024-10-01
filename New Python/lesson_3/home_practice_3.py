@@ -1,6 +1,7 @@
 #### --------- Тема 3. Модулі datetime та time. Робота з випадковими величинами
 
 import datetime
+
 # now = datetime.datetime.now()
 # print(now)
 
@@ -23,7 +24,6 @@ from re import match
 # print(seventh_day_2020)  # 2020-02-04 14:00:00
 # print(seventh_day_2020 + four_weeks_interval)  # 2020-02-04 14:00:00
 # print(four_weeks_interval)  # 2019-12-10 14:00:00
-
 
 
 ######## Отримання дати

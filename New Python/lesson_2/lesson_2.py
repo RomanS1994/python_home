@@ -16,12 +16,11 @@
 
 # if age > 18:
 #     print('you can have a beet')
-    
+
 
 # a = int(input('a >>> '))
 # b = int(input('b >>> '))
 # print(min(a, b))
-
 
 
 # Попрактикувати зрізи
@@ -41,6 +40,3 @@ print(text[:2])
 #     print("Welkome Roman")
 # else:
 #     print("Your user name or password is not true")
-
-
-
