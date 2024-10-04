@@ -20,4 +20,4 @@ def dad_filter(message):
     return re.sub(',{2,}', ',', message).strip(',')
 
 res = dad_filter("asdsad,d,as,dsa,dsa,das,d,,,asdsad ,,,asd,,")
-print(res)
+print(res) 
