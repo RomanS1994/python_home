@@ -9,6 +9,6 @@ text = (
 )
 
 
-pattern = re.compile(r"https?://w{3}\.[\w+_]+\.\w{2,5}")
+pattern = re.compile(r"https?://w{3}\.[\w+_\.]+\w{2,5}")
 urls = re.findall(pattern, text)
-print(urls)
+print(urls)  
