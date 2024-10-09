@@ -1,9 +1,9 @@
 from pathlib import Path 
 
 new_file = Path('./lesson_5/write_text.py')
-# new_file_1 = Path('./lesson_5/archiv.py')
+new_file_1 = Path('./lesson_5/archiv.py')
 # new_file_1.touch()
-new_file.touch()
+# new_file.touch()
 
 text = ["first line", "second line", "third line"]
 

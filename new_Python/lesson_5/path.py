@@ -13,11 +13,11 @@ from pathlib import Path
 # print('Hello world')
 
 
-file_name = Path('./lesson_6/')
-print(file_name)
+# file_name = Path('./lesson_6/')
+# print(file_name)
 
-with open(file_name / 'test.txt', 'r',) as file:
-    print(file.read())
-for elem in file_name.glob('*.txt'):
-    # print(elem)
-    ...
+# with open(file_name / 'test.txt', 'r',) as file:
+#     print(file.read())
+# for elem in file_name.glob('*.txt'):
+#     # print(elem)
+#     ...
