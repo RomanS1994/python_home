@@ -22,4 +22,4 @@ pattern = r"(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})"
 
 result = re.match(pattern, example_string)
 
-print(result)
+print(result is True)
