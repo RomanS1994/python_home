@@ -18,19 +18,24 @@
 # -------------------------
 #  Карування
 
-def greeting(variable, args):
-    print(f'Function greeting with variable {variable} {args}')
+# def greeting(variable, args):
+#     print(f'Function greeting with variable {variable} {args}')
 
-# greeting('Test', 'Passed')
+# # greeting('Test', 'Passed') 
 
-def other_func(variable):
+# def other_func(variable):
 
   
-    def inner_func(args):
-        print(f'Function greeting with variable {variable} {args}')
-    return inner_func
+#     def inner_func(args):
+#         print(f'Function greeting with variable {variable} {args}')
+#     return inner_func
 
-currying = other_func('Test')
+# currying = other_func('Test')
 
-# currying('Failed')
-# currying('Passed')
+# # currying('Failed')
+# # currying('Passed')
+
+
+# -------------------------
+# Декоратори
+
