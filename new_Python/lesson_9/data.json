@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Rebecca Weaver",
+        "email": "deborahmason@example.net",
+        "phone": "001-529-923-6431x21828",
+        "address": "205 Lester Rest\nLangton, DC 53645"
+    },
+    {
+        "name": "Erica Best",
+        "email": "cynthia61@example.com",
+        "phone": "923-287-6282x4152",
+        "address": "665 Wanda Springs\nRobertochester, ID 75786"
+    },
+    {
+        "name": "Susan Chapman",
+        "email": "kellybecky@example.net",
+        "phone": "001-324-589-6839",
+        "address": "36419 Gomez Track Apt. 089\nPort Victoriaport, MP 93902"
+    },
+    {
+        "name": "Joshua Brooks",
+        "email": "james12@example.net",
+        "phone": "(565)277-9605x5191",
+        "address": "0990 Palmer Place Apt. 897\nTaylorhaven, TX 10118"
+    },
+    {
+        "name": "Joseph Patterson",
+        "email": "scottsmith@example.net",
+        "phone": "(812)370-8867",
+        "address": "85451 Amanda Spur Suite 093\nGonzaleztown, WI 89719"
+    }
+]
