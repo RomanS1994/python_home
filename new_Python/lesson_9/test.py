@@ -1,12 +1,34 @@
-from collections import UserDict
+class Mammal:
+    phrase = ''
 
-class MyDictionary(UserDict):
-    # Приклад додавання нового методу
-    def add_key(self, key, value):
-        self.data[key] = value
+    def voice(self):
+        return self.phrase
 
-# Створення екземпляра власного класу
-my_dict = MyDictionary({'a': 1, 'b': 2})
-my_dict.add_key('c', 3)
-print(my_dict)
 
+class Dog(Mammal):
+    phrase = 'Bark!'
+
+
+class Cat(Mammal):
+    phrase = 'Meow!'
+
+
+class Chupakabra:
+    def voice(self):
+        return 'Whooooo!!!'
+
+
+class Recorder:
+    def record_animal(self, animal):
+        voice = animal.voice()
+        print(f'Recorded "{voice}"')
+
+
+r = Recorder()
+cat = Cat()
+dog = Dog()
+strange_animal = Chupakabra()
+
+r.record_animal(cat)  # Recorded "Meow!"
+r.record_animal(dog)  # Recorded "Bark!"
+r.record_animal(strange_animal)  # Recorded "Whooooo!!!"

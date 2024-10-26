@@ -16,6 +16,10 @@ class Item:
     def apply_discount(self):
         return self.price * self.pay_rate
 
+    def info(self):
+        return f'Item (name:{self.name}, price:{self.price}, quantity:{self.quantity})'
+
+
 
 item1 = Item('Phone', 100, 1)
 item2 = Item('Laptop', 1000, 5)
@@ -23,4 +27,4 @@ item2 = Item('Laptop', 1000, 5)
 
 print(item1.price)
 print(item2.price)
-print(item2.apply_discount())
+print(item2.apply_discount())  
