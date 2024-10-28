@@ -15,20 +15,23 @@ class Owner:
         self.name = name
         self.age = age
         self.address = address
+    
+    def info(self):
+        return {
+            'name': self.name,
+            'age': self.age,
+            'address': self.address
+        }
 
-
-class Cat(Animal):
-    def __init__(self, nickname, weight, breed, owner):
+        
+class Dog(Animal):
+    def __init__(self, nickname, weight, breed, owne):
         self.breed = breed
-        self.owner = owner
+        
         super().__init__(nickname, weight)
 
     def say(self):
-        return "Meow"
+        return "Woof"
 
-
-owner = Owner("Sherlock", 24, "London, 221B Baker Street")
-cat = Cat("Simon", 10, "british", owner)
-
-
-print(cat)
+    def who_is_owner(self):
+        return self.owne.info()
