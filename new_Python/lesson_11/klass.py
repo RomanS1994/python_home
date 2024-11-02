@@ -41,16 +41,16 @@ contacts = [
 ]
 
 persons = Contacts("user_class.dat", contacts)
-print(persons.__dict__)
+print(persons.filename)
 
-# persons.save_to_file()
-# first = persons.read_from_file()
-# first.save_to_file()
-# second = first.read_from_file()
-# second.save_to_file()
-# third = second.read_from_file()
+persons.save_to_file()
+first = persons.read_from_file()
+first.save_to_file()
+second = first.read_from_file()
+second.save_to_file()
+third = second.read_from_file()
 
-# print(persons.count_save)  # 0
-# print(first.count_save)  # 1
-# print(second.count_save)  # 2
-# print(third.count_save)  # 3
+print(persons.count_save)  # 0
+print(first.count_save)  # 1
+print(second.count_save)  # 2
+print(third.count_save)  # 3
